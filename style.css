@@ -54,8 +54,14 @@ footer#page_footer{
 
 fieldset{
 	width:216px;
+	border:none;
+	background-color:#ddd;
 }
 
+fieldset legend{
+	background-color:#ddd;
+	padding:0 64px 0 2 px;
+}
 fieldset ol{
 	list-style:none;
 	padding:0;
@@ -67,6 +73,23 @@ fieldset ol li{
 }
 fieldset input{
 	display:block;
+}
+
+input{
+	width:200px;
+	background-color:#fff;
+	border: 1px solid #bbb;
+}
+input[type="submit"]{
+	width:202px;
+	padding:0;
+	background-color: #bbb;
+}
+
+input, fieldset, legend{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius:5px;
 }
 
 table{
