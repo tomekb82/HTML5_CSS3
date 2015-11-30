@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> My Site in HTML5 </title>
+
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+
+	<body>
+		<header id="page_header">
+			<h1> Formularz </h1>
+
+			<nav>
+				<ul>
+					<li><a href="/">Aktualności</a></li>
+					<li><a href="forms">Formularz </a></li>
+					<li><a href="photos">Zdjęcia </a></li>
+					<li><a href="graphs">Grafika </a></li>
+					<li><a href="movies">Filmy </a></li>
+					<li><a href="contact">Kontakt </a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="project">
+			<form method="post" action="/projects/1">
+				<fieldset id="person_information">
+					<legend>Informacje na temat projektu</legend>
+					<ol>
+						<li>
+							<label for="name"> Nazwa </label>
+							<input type="text" name="name" autofocus id="name">
+						</li>
+						<li>
+							<label for="priority">Priorytet</label>
+							<input type="range" min="0" max="10" name="priority" value="0" id="priority">
+						</li>
+						<li>	
+							<label for="estimated_hours">Szacowana liczba godzin</label>
+							<input type="number" name="estimated_hours" min="0" max="1000" id="estimated_hours">
+						</li>
+						<li>
+							<label for="start_date">Data rozpoczęcia</label>
+							<input type="date" name="start_date" id="start_date" value="2015-11-30">
+						</li>
+						<li>
+							<label for="email">Email osoby kontaktowej </label>
+							<input type="email" name="email" id="email">
+						</li>
+						<li>
+							<label for="url">Adres URL</label>
+							<input type="url" name="url" id="url">
+						</li>
+						<li>
+							<input type="submit" value="Wyslij">
+						</li>
+					</ol>
+				</fieldset>
+			</form>
+		</section>
+		<section id="account">
+			<form method="post" action="/account/1">
+				<fieldset id="person_information">
+					<legend>Dodawanie konta użytkownika</legend>
+					<ol>
+						<li>
+							<label for="name"> Imię </label>
+							<input type="text" name="name" autofocus id="name" placeholder="'Jan'">
+						</li>
+						<li>
+							<label for="surname"> Nazwisko </label>
+							<input type="text" name="surname" id="surname" placeholder="'Kowalski'">
+						</li>
+
+						<li>
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" placeholder="uzytkownik@przyklad.com">
+						</li>
+						<li>
+							<label for="passwd">Hasło</label>
+							<input type=passwd" name="passwd" value="" autocomplete="off"
+								id="passwd" placeholder="8-16 znaków">
+						</li>
+						<li>
+							<label for="repeated_passwd">Potwierdź hasło</label>
+							<input type=passwd" name="repeated_passwd" value="" autocomplete="off"
+								id="repeated_passwd" placeholder="Ponownie wpisz hasło">
+						</li>
+
+						<li>
+							<input type="submit" value="Załóż konto">
+						</li>
+					</ol>
+				</fieldset>
+			</form>
+		</section>
+
+		<footer id="page_footer">
+			<p>&copy; 2015 TB </p>
+			<nav>
+				<ul>
+					<li><a href="/">Strona glówna</a></li>
+					<li><a href="about">O nas </a></li>
+					<li><a href="terms">Warunki</a></li>
+					<li><a href="privacy">Poufność</a></li>
+				</ul>
+			</nav
+		</footer>
+	</body>
+</html>
