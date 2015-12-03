@@ -242,5 +242,12 @@ tr:nth-last-child(-n+3) td{
 	border-radius:12px;
 }
 
+form#preferences{
+	width:900px;
+}
+fieldset#colors{
+	width:890px;
+}
+
 
 
